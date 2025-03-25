@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "public": true,
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "github": {
+    "silent": true
+  },
+  "outputDirectory": "public",
+  "rewrites": [
+    { "source": "/", "destination": "/templates/content/index.html" },
+    { "source": "/characters/:path*", "destination": "/templates/characters/:path*" },
+    { "source": "/content/:path*", "destination": "/templates/content/:path*" }
+  ]
+} 
